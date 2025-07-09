@@ -1,0 +1,6 @@
+firm_id,revenue_2020,revenue_2021,employees_2020,employees_2021,sex_2020,sex_2021,sector
+A001,25k,27000,61,60,F,Male,Tech
+A002,25,130,25130,35,Female,Male,Finance
+A003,"24,000","28,000",84,85,Female,Female,Retail
+A004,28991,29k,88,90,Female,Female,Tech
+A005,37,274,37274,45,Male,Male,Retail

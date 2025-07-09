@@ -1,0 +1,123 @@
+# Functions that put datasets into "long" format
+
+# --- _reshape_wide ---
+"""
+Reshape classic wide format (one row per entity, multiple variables as columns).
+Example: firm_id, revenue_2020, revenue_2021, employees_2020, employees_2021
+"""
+def _reshape_wide(df: pd.DataFrame, filename: str) -> pd.DataFrame:  # type: ignore
+    logging.info("[Reshaper] Processing wide format")
+    id_columns = _detect_id_columns(df)
+    value_columns = [col for col in df.columns if col not in id_columns]
+    if value_columns:
+        long_df = df.melt(
+            id_vars=id_columns,
+            value_vars=value_columns,
+            var_name='variable',
+            value_name='value'
+        )
+        long_df = _extract_time_and_variable(long_df)
+        if 'period' in long_df.columns and 'time_period' in long_df.columns:
+            mask = (long_df['time_period'].astype(str) == long_df['period'].astype(str)) | (long_df['time_period'].isna())
+            long_df = long_df[mask]
+        return pd.DataFrame(long_df)  # type: ignore
+    else:
+        return df
+
+# --- _reshape_key_value ---
+"""
+Dynamically reshape key-value format (variable and value columns can be in any order or have different names).
+"""
+def _reshape_key_value(df: pd.DataFrame, filename: str, variable_candidates=None, value_candidates=None) -> pd.DataFrame:
+    logging.info("[Reshaper] Processing key_value format (dynamic)")
+    if variable_candidates is None:
+        variable_candidates = ['variable', 'attribute', 'key']
+    if value_candidates is None:
+        value_candidates = ['value', 'val', 'amount']
+    col_map = {col.lower(): col for col in df.columns}
+    variable_col = next((col_map[c] for c in variable_candidates if c in col_map), None)
+    value_col = next((col_map[c] for c in value_candidates if c in col_map), None)
+    id_cols = [col for col in df.columns if col not in [variable_col, value_col]]
+    if variable_col and value_col:
+        long_df = df.rename(columns={variable_col: 'variable', value_col: 'value'})
+        cols_to_keep = [col for col in id_cols if col in long_df.columns] + [col for col in ['variable', 'value'] if col in long_df.columns]
+        long_df = long_df[cols_to_keep]
+        if isinstance(long_df, pd.Series):
+            long_df = long_df.to_frame().T
+        return pd.DataFrame(long_df)  # type: ignore
+    elif len(df.columns) >= 3:
+        id_cols = list(df.columns[:-2])
+        key_col, value_col = df.columns[-2:]
+        long_df = df.rename(columns={key_col: 'variable', value_col: 'value'})
+        cols_to_keep = id_cols + ['variable', 'value']
+        long_df = long_df[cols_to_keep]
+        if isinstance(long_df, pd.Series):
+            long_df = long_df.to_frame().T
+        return pd.DataFrame(long_df)  # type: ignore
+    else:
+        logging.warning("Key-value fallback: not enough columns to reshape.")
+        return df
+
+# --- _reshape_time_series_wide ---
+"""
+Reshape time series wide format (time periods as columns, can be years, months, quarters, etc.).
+Example: firm_id, 2020, 2021, Jan, Feb, Q1_2020, etc.
+"""
+def _reshape_time_series_wide(df: pd.DataFrame, filename: str, known_id_names=None, uniqueness_threshold=0.5) -> pd.DataFrame:
+    logging.info("[Reshaper] Processing time_series_wide format (dynamic)")
+    id_columns = _detect_id_columns(df, known_id_names, uniqueness_threshold)
+    time_columns = [col for col in df.columns if col not in id_columns]
+    if time_columns:
+        long_df = df.melt(
+            id_vars=id_columns,
+            value_vars=time_columns,
+            var_name='time_period',
+            value_name='value'
+        )
+        return long_df
+    else:
+        return df
+
+# --- _reshape_matrix_format ---
+"""
+Reshape matrix format (rows and columns represent different dimensions).
+Example: firm_id as rows, years as columns
+"""
+def _reshape_matrix_format(df: pd.DataFrame, filename: str) -> pd.DataFrame:
+    logging.info("[Reshaper] Processing matrix_format")
+    return _reshape_time_series_wide(df, filename)
+
+# --- reshape_to_tidy_long ---
+"""
+Reshape DataFrame to tidy long format based on detected shape type.
+"""
+def reshape_to_tidy_long(df: pd.DataFrame, shape_type: str, filename: str) -> pd.DataFrame:
+    if df.empty:
+        return df
+    if shape_type == "wide":
+        return _reshape_wide(df, filename)
+    elif shape_type == "key_value":
+        return _reshape_key_value(df, filename)
+    elif shape_type == "time_series_wide":
+        return _reshape_time_series_wide(df, filename)
+    elif shape_type == "matrix_format":
+        return _reshape_matrix_format(df, filename)
+    elif shape_type in {"stacked_multi_time_long", "pivoted_by_variable", "two_row_header", "already_long"}:
+        return _reshape_already_long(df, filename)
+    else:
+        logging.warning(f"Unknown shape_type '{shape_type}', returning DataFrame as-is.")
+        return df
+
+# --- _extract_time_and_variable ---
+"""
+Extract time period and variable name from column names like 'revenue_2020' or 'sales_Jan'.
+This function is dynamic and works for any time period (year, month, quarter, etc.).
+"""
+def _extract_time_and_variable(long_df: pd.DataFrame) -> pd.DataFrame:
+    if 'variable' not in long_df.columns:
+        return long_df
+    split = long_df['variable'].astype(str).str.rsplit(r'[_\-\s]', n=1, regex=True, expand=True)
+    long_df['variable'] = split[0]
+    if split.shape[1] > 1:
+        long_df['time_period'] = split[1]
+    return long_df 

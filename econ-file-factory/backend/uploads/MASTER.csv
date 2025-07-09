@@ -1,0 +1,53 @@
+company_id,industry,year,employees,revenue,gender,source,region
+A001,Tech,2020,61.0,25000.0,F,sampleset1.csv,Nan
+A002,Finance,2020,25130.0,25.0,Female,sampleset1.csv,Nan
+A003,Retail,2020,84.0,,Female,sampleset1.csv,Nan
+A004,Tech,2020,88.0,28991.0,Female,sampleset1.csv,Nan
+A005,Retail,2020,37274.0,37.0,Male,sampleset1.csv,Nan
+A010,Nan,2020,25.0,15000.0,Male,sampleset2.csv,Nan
+A011,Nan,2020,25.0,15000.0,Male,sampleset2.csv,Nan
+A012,Nan,2020,25.0,15000.0,Female,sampleset2.csv,Nan
+A013,Nan,2020,40.0,12000.0,Female,sampleset2.csv,Nan
+A014,Nan,2020,40.0,,Female,sampleset2.csv,Nan
+A015,Nan,2021,,15000.0,Female,sampleset2.csv,Nan
+A016,Nan,2021,,,Female,sampleset2.csv,Nan
+A017,Nan,2021,30.0,14000.0,Female,sampleset2.csv,Nan
+A020,Nan,2020,33.0,10000.0,Male,sampleset3.csv,Nan
+A021,Nan,2021,,10000.0,Female,sampleset3.csv,Nan
+A022,Nan,2020,22.0,,Female,sampleset4.csv,East
+A023,Nan,2021,,,Male,sampleset4.csv,West
+A024,Nan,2021,33.0,10000.0,Male,sampleset4.csv,South
+A025,Nan,2021,44.0,,Female,sampleset4.csv,North
+A026,Nan,2020,22.0,10000.0,Male,sampleset4.csv,West
+
+# Duplicate Records
+company_id,industry,year,employees,revenue,gender,source,region
+A001,Tech,2021,60.0,27000.0,Male,sampleset1.csv,Nan
+A002,Finance,2021,35.0,130.0,Male,sampleset1.csv,Nan
+A003,Retail,2021,85.0,,Female,sampleset1.csv,Nan
+A004,Tech,2021,90.0,29000.0,Female,sampleset1.csv,Nan
+A005,Retail,2021,45.0,274.0,Male,sampleset1.csv,Nan
+A010,Nan,2021,,15000.0,Male,sampleset2.csv,Nan
+A011,Nan,2021,,15000.0,Female,sampleset2.csv,Nan
+A020,Nan,2021,35.0,10000.0,Male,sampleset3.csv,Nan
+
+# Audit Report
+# Total records: 20
+# Duplicate records: 8
+# Files processed: 4
+
+# Harmonization Summary
+# sector -> industry (confidence: 0.95, fallback: False)
+# employees -> employees (confidence: 1.00, fallback: False)
+# sex -> gender (confidence: 0.95, fallback: False)
+# StaffTotal -> employees (confidence: 0.90, fallback: False)
+# Gender -> gender (confidence: 1.00, fallback: False)
+# FirmCode -> company_id (confidence: 0.95, fallback: False)
+# region -> region (confidence: 1.00, fallback: False)
+# year -> year (confidence: 1.00, fallback: False)
+# period -> year (confidence: 0.90, fallback: False)
+# revenue -> revenue (confidence: 1.00, fallback: False)
+# Year -> year (confidence: 1.00, fallback: False)
+# firm_id -> company_id (confidence: 0.95, fallback: False)
+# Income -> revenue (confidence: 0.85, fallback: False)
+# CompanyID -> company_id (confidence: 0.95, fallback: False)

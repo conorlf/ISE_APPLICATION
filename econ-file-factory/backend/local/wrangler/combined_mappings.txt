@@ -1,0 +1,339 @@
+=== Direct Mappings ===
+"" -> "NULL"
+"$" -> ""
+"-" -> "NULL"
+"--" -> "NULL"
+"." -> "NULL"
+".." -> "NULL"
+"0" -> "Female"
+"1" -> "Male"
+"100k" -> "100000"
+"100K" -> "100000"
+"10k" -> "10000"
+"10K" -> "10000"
+"1b" -> "1000000000"
+"1B" -> "1000000000"
+"1bn" -> "1000000000"
+"1BN" -> "1000000000"
+"1Bn" -> "1000000000"
+"1k" -> "1000"
+"1K" -> "1000"
+"1m" -> "1000000"
+"1M" -> "1000000"
+"1mm" -> "1000000"
+"1MM" -> "1000000"
+"1mn" -> "1000000"
+"1MN" -> "1000000"
+"1t" -> "1000000000000"
+"1T" -> "1000000000000"
+"2" -> "Unspecified"
+"acommodate" -> "accommodate"
+"adress" -> "address"
+"AED" -> "AED"
+"Agri" -> "Agriculture"
+"agri" -> "Agriculture"
+"AgriTech" -> "Agricultural Technology"
+"agrrement" -> "agreement"
+"ARS" -> "ARS"
+"AUD" -> "AUD"
+"B2B" -> "Business to Business"
+"B2C" -> "Business to Consumer"
+"BioTech" -> "Biotechnology"
+"BRL" -> "BRL"
+"buisness" -> "business"
+"C2C" -> "Consumer to Consumer"
+"CAD" -> "CAD"
+"CHF" -> "CHF"
+"Cleantech" -> "Clean Technology"
+"CLP" -> "CLP"
+"CNY" -> "CNY"
+"commerical" -> "commercial"
+"consensusus" -> "consensus"
+"COP" -> "COP"
+"CPG" -> "Fast Moving Consumer Goods"
+"D2C" -> "Direct to Consumer"
+"definately" -> "definitely"
+"dependancy" -> "dependency"
+"DKK" -> "DKK"
+"EdTech" -> "Education Technology"
+"embarass" -> "embarrass"
+"employee" -> ""
+"Employee" -> ""
+"employees" -> ""
+"Employees" -> ""
+"Enterprise" -> "Large Enterprise"
+"enviroment" -> "environment"
+"EUR" -> "EUR"
+"eur" -> ""
+"expence" -> "expense"
+"F" -> "Female"
+"f" -> "Female"
+"fem" -> "Female"
+"female" -> "Female"
+"Female" -> "Female"
+"FinTech" -> "Financial Technology"
+"fintech" -> "Financial Technology"
+"FMCG" -> "Fast-Moving Consumer Goods"
+"fmcg" -> "Fast-Moving Consumer Goods"
+"foriegn" -> "foreign"
+"GB" -> "United Kingdom"
+"GBP" -> "GBP"
+"gbp" -> ""
+"goverment" -> "government"
+"GovTech" -> "Government Technology"
+"Great Britain" -> "United Kingdom"
+"HKD" -> "HKD"
+"Hong Kong SAR" -> "Hong Kong"
+"IaaS" -> "Infrastructure as a Service"
+"ICT" -> "Information and Communications Technology"
+"IDR" -> "IDR"
+"ILS" -> "ILS"
+"INR" -> "INR"
+"InsurTech" -> "Insurance Technology"
+"IT" -> "Information Technology"
+"it" -> "Information Technology"
+"JPY" -> "JPY"
+"Korea, Rep." -> "South Korea"
+"KR" -> "South Korea"
+"KRW" -> "KRW"
+"Large" -> "Large Enterprise"
+"M" -> "Male"
+"m" -> "Male"
+"maintainance" -> "maintenance"
+"male" -> "Male"
+"Male" -> "Male"
+"managment" -> "management"
+"manufaturing" -> "manufacturing"
+"masc" -> "Male"
+"Medium" -> "Medium Enterprise"
+"MedTech" -> "Medical Technology"
+"Mfg" -> "Manufacturing"
+"mfg" -> "Manufacturing"
+"Micro" -> "Micro Enterprise"
+"Mid-Market" -> "Mid-Market"
+"missing" -> "NULL"
+"Missing" -> "NULL"
+"MXN" -> "MXN"
+"MYR" -> "MYR"
+"n.a." -> "NULL"
+"N.A." -> "NULL"
+"n/a" -> "NULL"
+"N/A" -> "NULL"
+"na" -> "NULL"
+"NA" -> "NULL"
+"nan" -> "NULL"
+"NaN" -> "NULL"
+"NB" -> "Non-binary"
+"nb" -> "Non-binary"
+"NGN" -> "NGN"
+"NGO" -> "Non-Governmental Organization"
+"NOK" -> "NOK"
+"Non-binary" -> "Non-binary"
+"nonbinary" -> "Non-binary"
+"none" -> "NULL"
+"None" -> "NULL"
+"not available" -> "NULL"
+"Not Available" -> "NULL"
+"NPO" -> "Non-Profit Organization"
+"null" -> "NULL"
+"NULL" -> "NULL"
+"NZD" -> "NZD"
+"ocassion" -> "occasion"
+"occured" -> "occurred"
+"occurence" -> "occurrence"
+"Other" -> "Other"
+"other" -> "Other"
+"PaaS" -> "Platform as a Service"
+"persue" -> "pursue"
+"PHP" -> "PHP"
+"PKR" -> "PKR"
+"PLN" -> "PLN"
+"PRC" -> "China"
+"publically" -> "publicly"
+"R and D" -> "Research and Development"
+"R&D" -> "Research and Development"
+"reciept" -> "receipt"
+"recieve" -> "receive"
+"refered" -> "referred"
+"RegTech" -> "Regulatory Technology"
+"Republic of Korea" -> "South Korea"
+"revenue" -> ""
+"Revenue" -> ""
+"RU" -> "Russia"
+"RUB" -> "RUB"
+"Russian Federation" -> "Russia"
+"SaaS" -> "Software as a Service"
+"SAR" -> "SAR"
+"Scale-up" -> "Scale-up"
+"SEK" -> "SEK"
+"seperate" -> "separate"
+"SGD" -> "SGD"
+"Small" -> "Small Enterprise"
+"SMB" -> "Small and Medium Business"
+"SMBs" -> "Small and Medium Business"
+"SME" -> "Small and Medium Enterprise"
+"Startup" -> "Startup"
+"succesful" -> "successful"
+"teh" -> "the"
+"Telecom" -> "Telecommunications"
+"telecom" -> "Telecommunications"
+"THB" -> "THB"
+"tommorow" -> "tomorrow"
+"trn" -> "1000000000000"
+"TRY" -> "TRY"
+"U" -> "Unspecified"
+"u" -> "Unspecified"
+"U.K." -> "United Kingdom"
+"U.S." -> "United States"
+"U.S.A." -> "United States"
+"UK" -> "United Kingdom"
+"undefined" -> "NULL"
+"Undefined" -> "NULL"
+"United States of America" -> "United States"
+"unk" -> "NULL"
+"Unk" -> "NULL"
+"unknown" -> "NULL"
+"Unknown" -> "NULL"
+"US" -> "United States"
+"US$" -> "US Dollar"
+"USA" -> "United States"
+"USD" -> "US Dollar"
+"usd" -> ""
+"ZAR" -> "ZAR"
+"£" -> "GBP"
+"¥" -> "JPY"
+"—" -> "NULL"
+"₩" -> "KRW"
+"₫" -> "VND"
+"€" -> "EUR"
+"₹" -> "INR"
+"₽" -> "RUB"
+
+=== Pattern Mappings ===
+r'^\s+|\s+$' | r'' | Trim whitespace
+r'[\u00A0]' | r'' | Remove non-breaking space
+r'(?<=\d),(?=\d{3}\b)' | r'' | Remove thousands separators
+r'(?i)(\d+(?:,\d{3})*(?:\.\d+)?)' | r'-\1' | Accounting negatives → signed
+r'(?i)\b(\d+(?:\.\d+)?)\s?k\b' | r'\1''000
+r'(?i)\b(\d+(?:\.\d+)?)\s?(mn|m)\b' | r'\1''000000
+r'(?i)\b(\d+(?:\.\d+)?)\s?(bn|b)\b' | r'\1''000000000
+r'(?i)\b(\d+(?:\.\d+)?)\s?(tn|t)\b' | r'\1''000000000000
+r'(?i)\b(\d+(?:\.\d+)?)\s?mm\b' | r'\1''000000
+r'^[\u0024\u00A3\u20AC\u00A5\u20B9]\s?(\d+(?:,\d{3})(?:\.\d+)?)' | r'\1'
+r'(\d+(?:,\d{3})(?:\.\d+)?)\s?[\u0024\u00A3\u20AC\u00A5\u20B9]' | r'\1'
+r'(?i)^(USD|EUR|GBP|JPY|CNY|INR)\s+(\d+(?:,\d{3})*(?:\.\d+)?)' | r'\2'
+r'(\d+(?:\.\d+)?)\s?%' | r'\1'
+r'(?i)^(na|n/?a|n\.a\.?|not available|missing|unknown|unspecified|null|nan)$' | 'NULL'
+r'(?i)^m(ale)?$' | 'Male'
+r'(?i)^f(emale)?$' | 'Female'
+r'(?i)^(non[-\s]?binary|nb)$' | 'Non-binary'
+r'^1$' | 'Male'
+r'^0$' | 'Female'
+r'(?i)\bit\b' | 'Information Technology'
+r'(?i)\b(telecom|telco)\b' | 'Telecommunications'
+r'(?i)\b(mfg|manufacturing)\b' | 'Manufacturing'
+r'(?i)\b(us|u\.s\.a?\.?|america)\b' | 'United States'
+r'(?i)\b(uk|u\.k\.|britain|great britain|gb)\b' | 'United Kingdom'
+r'(?i)\b(korea,? rep\.?|south korea|kr)\b' | 'South Korea'
+r'(?i)\b(sme|smb)s?\b' | 'Small and Medium Enterprise'
+r'(?i)\bmicro[-\s]?enterprise\b' | 'Micro Enterprise'
+r'(?i)\bsmall[-\s]?enterprise\b' | 'Small Enterprise'
+r'(?i)\bmedium[-\s]?enterprise\b' | 'Medium Enterprise'
+r'(?i)\blarge[-\s]?enterprise\b' | 'Large Enterprise'
+r'(?i)^(?:revenue|rev)\s*[:-]?\s*(\d+(?:\.\d+)?[kKmMnNbBtT]?)$' | r'\1'
+r'(?i)^(?:employees|emp)\s*[:-]?\s*(\d+(?:\.\d+)?[kKmMbB]?)$' | r'\1'
+r'(?i)^(\d+(?:\.\d+)?)k$' | r'\1''000
+r'(?i)^(\d+(?:\.\d+)?)m{1,2}$' | r'\1''000000
+r'(?i)^(\d+(?:\.\d+)?)b$' | r'\1''000000000
+r'(?i)^(\d+(?:\.\d+)?)bn$' | r'\1''000000000
+r'(?i)^(\d+(?:\.\d+)?)trn?$' | r'\1''000000000000
+r'(?i)^(\d+(?:\.\d+)?)(?:\s*ths)$' | r'\1''000
+r'(?i)^(\d+(?:\.\d+)?)(?:\s*mln)$' | r'\1''000000
+r'(?i)^(\d+(?:\.\d+)?)(?:\s*bln)$' | r'\1''000000000
+r'^[\$\£\€\¥\₹\₩\₽\₫]\s*(\d{1,3}(?:,\d{3})*(?:\.\d+)?)([kmbt]|bn|trn?)?$' | r'\1\2'
+r'(?i)\s+usd$' | r''
+r'(?i)\s+eur$' | r''
+r'(?i)\s+gbp$' | r''
+r'(?i)\s+[a-z]{3}$' | r''
+r'(\d+(?:\.\d+)?)\s*\%' | r'\1'
+r'(?i)^(\d+(?:\.\d+)?)\s*per\s*cent$' | r'\1'
+r'(?<=\d),(?=\d{3}\b)' | r''
+r'\u202f' | r''
+r'^\s+|\s+$' | r''
+r'^\((\d+(?:\.\d+)?)\)$' | r'-\1'
+r'^[<]\s*(\d+(?:\.\d+)?)([kmbt]|bn)?$' | r'<\1\2'
+r'^[>]\s*(\d+(?:\.\d+)?)([kmbt]|bn)?$' | r'>\1\2'
+r'(?i)^about\s+(\d+(?:\.\d+)?)([kmbt]|bn)?$' | r'\1\2'
+r'(?i)^approx\.?\s+(\d+(?:\.\d+)?)([kmbt]|bn)?$' | r'\1\2'
+r'(?i)^c\.\s*(\d+(?:\.\d+)?)([kmbt]|bn)?$' | r'\1\2'
+r'(?i)^(\d+(?:\.\d+)?)\s*[–—\-]\s*(\d+(?:\.\d+)?)([kmbt]|bn)?$' | r'\1-\2\3'
+r'(?i)(\d+)\s*-\s*(\d+)\s*employees?' | r'\1-\2'
+r'(?i)(\d+)\s*employees?' | r'\1'
+r'(?i)(\d{1,3}(?:,\d{3})*)\s*revenue' | r'\1'
+r'(?i)^(micro|small|medium|mid(?:-|\s*)market|mid|large|enterprise|global)\s*-?\s*(company|org|org\.)?$' | r'\1'
+r'(?i)^(n/?a|na\.?|nan|null|none|missing|unknown|undefined|\-+|\.{1,2})$' | r'NULL'
+r',' | r''
+(?i)^(?:AF|AFG|af|afg|afghanistan)$ | r'Afghanistan'
+(?i)^(?:AL|ALB|al|alb|albania)$ | r'Albania'
+(?i)^(?:DZ|DZA|dz|dza|algeria)$ | r'Algeria'
+(?i)^(?:AS|ASM|as|asm|american[\s\-]?samoa)$ | r'American Samoa'
+(?i)^(?:AD|AND|ad|and|andorra)$ | r'Andorra'
+(?i)^(?:AO|AGO|ao|ago|angola)$ | r'Angola'
+(?i)^(?:AI|AIA|ai|aia|anguilla)$ | r'Anguilla'
+(?i)^(?:AG|ATG|ag|atg|antigua[\s\-]?and[\s\-]?barbuda|barbuda)$ | r'Antigua and Barbuda'
+(?i)^(?:AR|ARG|ar|arg|argentina)$ | r'Argentina'
+(?i)^(?:AM|ARM|am|arm|armenia)$ | r'Armenia'
+(?i)^(?:AW|ABW|aw|abw|aruba)$ | r'Aruba'
+(?i)^(?:AU|AUS|au|aus|australia)$ | r'Australia'
+(?i)^(?:AT|AUT|at|aut|austria)$ | r'Austria'
+(?i)^(?:AZ|AZE|az|aze|azerbaijan)$ | r'Azerbaijan'
+(?i)^(?:BS|BHS|bs|bhs|bahamas|the[\s\-]?bahamas)$ | r'Bahamas'
+(?i)^(?:BH|BHR|bh|bhr|bahrain)$ | r'Bahrain'
+(?i)^(?:BD|BGD|bd|bgd|bangladesh)$ | r'Bangladesh'
+(?i)^(?:BB|BRB|bb|brb|barbados)$ | r'Barbados'
+(?i)^(?:BY|BLR|by|blr|belarus|belorussia|white[\s\-]?russia)$ | r'Belarus'
+(?i)^(?:BE|BEL|be|bel|belgium)$ | r'Belgium'
+(?i)^(?:BZ|BLZ|bz|blz|belize)$ | r'Belize'
+(?i)^(?:BJ|BEN|bj|ben|benin)$ | r'Benin'
+(?i)^(?:BM|BMU|bm|bmu|bermuda)$ | r'Bermuda'
+(?i)^(?:BT|BTN|bt|btn|bhutan)$ | r'Bhutan'
+(?i)^(?:BO|BOL|bo|bol|bolivia|plurinational[\s\-]?state[\s\-]?of[\s\-]?bolivia)$ | r'Bolivia'
+(?i)^(?:BA|BIH|ba|bih|bosnia[\s\-]?and[\s\-]?herzegovina|bosnia|herzegovina)$ | r'Bosnia and Herzegovina'
+(?i)^(?:BW|BWA|bw|bwa|botswana)$ | r'Botswana'
+(?i)^(?:BR|BRA|br|bra|brazil)$ | r'Brazil'
+(?i)^(?:IO|IOT|io|iot|british[\s\-]?indian[\s\-]?ocean[\s\-]?territory)$ | r'British Indian Ocean Territory'
+(?i)^(?:VG|VGB|vg|vgb|british[\s\-]?virgin[\s\-]?islands)$ | r'British Virgin Islands'
+(?i)^(?:BN|BRN|bn|brn|brunei|brunei[\s\-]?darussalam)$ | r'Brunei'
+(?i)^(?:BG|BGR|bg|bgr|bulgaria)$ | r'Bulgaria'
+(?i)^(?:BF|BFA|bf|bfa|burkina[\s\-]?faso)$ | r'Burkina Faso'
+(?i)^(?:BI|BDI|bi|bdi|burundi)$ | r'Burundi'
+(?i)^(?:KH|KHM|kh|khm|cambodia|kampuchea)$ | r'Cambodia'
+(?i)^(?:CM|CMR|cm|cmr|cameroon)$ | r'Cameroon'
+(?i)^(?:CA|CAN|ca|can|canada)$ | r'Canada'
+(?i)^(?:CV|CPV|cv|cpv|cabo[\s\-]?verde|cape[\s\-]?verde)$ | r'Cabo Verde'
+(?i)^(?:KY|CYM|ky|cym|cayman[\s\-]?islands)$ | r'Cayman Islands'
+(?i)^(?:CF|CAF|cf|caf|central[\s\-]?african[\s\-]?republic|car)$ | r'Central African Republic'
+(?i)^(?:TD|TCD|td|tcd|chad)$ | r'Chad'
+(?i)^(?:CL|CHL|cl|chl|chile)$ | r'Chile'
+(?i)^(?:CN|CHN|cn|chn|china|prc|people's[\s\-]?republic[\s\-]?of[\s\-]?china)$ | r'China'
+(?i)^(?:CX|CXR|cx|cxr|christmas[\s\-]?island)$ | r'Christmas Island'
+(?i)^(?:CC|CCK|cc|cck|cocos[\s\-]?(keeling)?[\s\-]?islands)$ | r'Cocos (Keeling) Islands'
+(?i)^(?:CO|COL|co|col|colombia)$ | r'Colombia'
+(?i)^(?:KM|COM|km|com|comoros)$ | r'Comoros'
+(?i)^(?:CG|COG|cg|cog|republic[\s\-]?of[\s\-]?the[\s\-]?congo|congo[\s\-]?brazzaville)$ | r'Republic of the Congo'
+(?i)^(?:CD|COD|cd|cod|dr[\s\-]?congo|drc|democratic[\s\-]?republic[\s\-]?of[\s\-]?congo|congo[\s\-]?kinshasa)$ | r'Democratic Republic of the Congo'
+(?i)^(?:CK|COK|ck|cok|cook[\s\-]?islands)$ | r'Cook Islands'
+(?i)^(?:CR|CRI|cr|cri|costa[\s\-]?rica)$ | r'Costa Rica'
+(?i)^(?:CI|CIV|ci|civ|côte[\s\-]?d['’]?ivoire|ivory[\s\-]?coast)$ | r"Côte d'Ivoire"
+(?i)^(?:HR|HRV|hr|hrv|croatia|hrvatska)$ | r'Croatia'
+(?i)^(?:CU|CUB|cu|cub|cuba)$ | r'Cuba'
+(?i)^(?:CW|CUW|cw|cuw|curaçao|curacao)$ | r'Curaçao'
+(?i)^(?:CY|CYP|cy|cyp|cyprus)$ | r'Cyprus'
+(?i)^(?:CZ|CZE|cz|cze|czech[\s\-]?republic|czechia)$ | r'Czechia'
+(?i)^(?:DK|DNK|dk|dnk|denmark)$ | r'Denmark'
+(?i)^(?:DJ|DJI|dj|dji|djibouti)$ | r'Djibouti'
+(?i)^(?:DM|DMA|dm|dma|dominica)$ | r'Dominica'
+(?i)^(?:DO|DOM|do|dom|dominican[\s\-]?republic)$ | r'Dominican Republic'
+(?i)^(?:EC|ECU|ec|ecu|ecuador)$ | r'Ecuador'
+(?i)^(?:EG|EGY|eg|egy|egypt|arab[\s\-]?republic[\s\-]?of[\s\-]?egypt)$ | r'Egypt'
+(?i)^(?:SV|SLV|sv|slv|el[\s\-]?salvador)$ | r'El Salvador'

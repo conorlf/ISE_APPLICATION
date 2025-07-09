@@ -1,0 +1,10 @@
+Flask
+pandas
+Werkzeug
+flask-cors
+openai>=1.0.0
+numpy
+openpyxl
+redis
+python-dotenv
+chardet 

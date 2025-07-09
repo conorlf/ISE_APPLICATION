@@ -1,0 +1,10 @@
+firm_id,year,variable,value
+A020,2020,revenue,10k
+A020,2020,employees,33
+A020,2020,sex,Male
+A020,2021,revenue,10000
+A020,2021,employees,35
+A020,2021,sex,Male
+A021,2021,revenue,10000.00
+A021,2021,employees,NaN
+A021,2021,sex,Female
