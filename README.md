@@ -20,7 +20,6 @@ StataGo is a comprehensive tool designed for economists and researchers to strea
 - **React 18** with TypeScript
 - **Vite** for fast development and building
 - **Tailwind CSS** for modern, responsive styling
-- **shadcn/ui** for beautiful, accessible UI components
 - **Lucide React** for consistent iconography
 - **React Router** for navigation
 
