@@ -2,7 +2,7 @@
 A modern web application for econometric data processing and analysis that automates data harmonization and generates publication-ready Stata .do files for econometric research.
 ## 🎯 Overview
 
-EconFile Factory is a comprehensive tool designed for economists and researchers to streamline their data analysis workflow. The application combines AI-powered data harmonization with automated econometric code generation, making it easier to process datasets and conduct rigorous econometric analysis.
+StataGo is a comprehensive tool designed for economists and researchers to streamline their data analysis workflow. The application combines AI-powered data harmonization with automated econometric code generation, making it easier to process datasets and conduct rigorous econometric analysis.
 
 ### Key Features
 
